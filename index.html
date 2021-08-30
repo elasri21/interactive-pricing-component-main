@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+    <div id="page">
+        <div class="head">
+            <h2>Simple, traffic-based pricing</h2>
+            <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </div>
+        <section>
+            <div class="price">
+                <p class="all-prices first-price"><span class="upercase" data-price="10">k Pageviews</span> <span class='strong' data-amount="8"></span>/month</p>
+                <p class="all-prices"><span class="upercase" data-price="50">k Pageviews</span> <span class='strong' data-amount="12"></span>/month</p>
+                <p class="all-prices"><span class="upercase" data-price="100">k Pageviews</span> <span class='strong' data-amount="16"></span>/month</p>
+                <p class="all-prices"><span class="upercase" data-price="500">k Pageviews</span> <span class='strong' data-amount="24"></span>/month</p>
+                <p class="all-prices"><span class="upercase" data-price="1">M Pageviews</span> <span class='strong' data-amount="36"></span>/month</p>
+                <div class="range">
+                    <span class="box" data-index="0"><span class="show-element item" id="item" draggable="true"><img src="images/icon-slider.svg" alt=""></span></span>
+                    <span class="box" data-index="1"></span>
+                    <span class="box" data-index="2"></span>
+                    <span class="box" data-index="3"></span>
+                    <span class="box" data-index="4"></span>
+                </div>
+                <p class="change">Monthly Billing <span class="parent"><span class="ball one"></span><span class="ball two"></span></span>Yearly Billing <span class="red">25% discount</span></p>
+            </div>
+            <div class="trial">
+                <div class="sudd">
+                    <p><img src="images/icon-check.svg" alt="">Unlimited websites</p>
+                    <p><img src="images/icon-check.svg" alt="">100% data ownership</p>
+                    <p><img src="images/icon-check.svg" alt="">Email reports</p>
+                </div>
+                <div class="start"><button type="button">Start my trial</button></div>
+            </div>
+        </section>
+    </div>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+    </footer>
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

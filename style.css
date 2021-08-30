@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html,
+body,
+#page {
+  height: 100%;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/*start of global styles*/
+p {
+  color: hsl(225, 20%, 60%);
+}
+/*end of global styles*/
+#page {
+  position: relative;
+  max-width: 1440px;
+  background-color: hsl(230, 100%, 99%);
+}
+@media screen and (max-width: 375px) {
+  #page {
+    max-width: 375px;
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+}
+/*start of top section style*/
+.head {
+  width: 100%;
+  height: 400px;
+  background-color: hsl(224, 65%, 95%);
+  background-image: url("images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  border-radius: 0 0 0 150px;
+  padding: 100px;
+  text-align: center;
+}
+@media screen and (max-width: 375px) {
+  .head {
+    padding: 100px 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .head p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(227, 35%, 25%);
+  margin-bottom: 10px;
+}
+.head p {
+  font-size: 16px;
+  font-size: 600;
+}
+
+@media screen and (max-width: 375px) {
+  p {
+    text-align: center;
+  }
+}
+/*end of top section style*/
+
+/*start of section style*/
+section {
+  width: 550px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px 30px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px hsl(224, 65%, 95%), -5px -5px 10px hsl(224, 65%, 95%);
+}
+@media screen and (max-width: 375px) {
+  section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 80%;
+  }
+}
+.all-prices {
+  display: none;
+  text-align: center;
+}
+
+.first-price {
+  display: block;
+}
+.upercase {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.strong {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 800;
+  color: hsl(227, 35%, 25%);
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 375px) {
+  .strong {
+    margin-left: 0px;
+  }
+}
+.range {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: hsl(174, 77%, 80%);
+  display: flex;
+}
+.box {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  /* background-color: red; */
+}
+.item {
+  position: absolute;
+  text-align: center;
+  display: block;
+  width: 32px;
+  height: 32px;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: hsl(174, 86%, 45%);
+  box-shadow: 10px 10px 10px hsl(174, 77%, 80%);
+  cursor: pointer;
+}
+.item:hover {
+  background-color: hsla(174, 86%, 45%, 0.6);
+}
+.item img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.change {
+  text-align: center;
+  font-weight: 400;
+}
+@media screen and (max-width: 375px) {
+  .change {
+    width: 110%;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+.parent {
+  display: inline-block;
+  margin-left: 6px;
+  margin-right: 6px;
+  vertical-align: middle;
+  width: 30px;
+  height: 16px;
+  padding: 1px;
+  background-color: hsl(224, 65%, 95%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.parent:hover {
+  background-color: hsl(174, 77%, 80%);
+}
+.red {
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  border-radius: 10px;
+  padding: 2px 3px;
+}
+.ball {
+  display: inline-block;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+.one {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.trial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid hsl(224, 65%, 95%);
+}
+@media screen and (max-width: 375px) {
+  .trial {
+    display: block;
+  }
+}
+.trial > div {
+  width: 40%;
+}
+@media screen and (max-width: 375px) {
+  .trial > div {
+    width: 100%;
+    text-align: center;
+  }
+}
+.sudd img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.sudd p {
+  margin-bottom: 10px;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: hsl(227, 35%, 25%);
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 20px;
+  color: hsla(224, 65%, 95%, 0.8);
+}
+@media screen and (max-width: 375px) {
+  button {
+    margin-top: 20px;
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+button:hover {
+  color: hsl(224, 65%, 95%);
+}
+/*i get tothis point*/
+
+/*start of section style*/
+
+.hide {
+  display: hide;
+}
+.drag-over {
+  background-color: red;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*i got to point where i have to fix some mobile issues*/
